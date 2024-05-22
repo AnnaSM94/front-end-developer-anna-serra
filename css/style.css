@@ -1,6 +1,7 @@
 :root {
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
+  --light-primary-color: #7e77ff;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -58,6 +59,8 @@ p {
 
 .primary-link:hover {
   text-decoration: none;
+  color: white;
+  background-color: var(--light-primary-color);
 }
 
 .secondary-link {
@@ -67,6 +70,8 @@ p {
 
 .secondary-link:hover {
   text-decoration: none;
+  color: var(--light-primary-color);
+  border: 1px solid var(--light-primary-color);
 }
 
 .homepage-link {
@@ -94,4 +99,26 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 44px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
 }
